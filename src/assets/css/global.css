@@ -1,0 +1,10 @@
+/* 全局样式 */
+html, body, #app{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
