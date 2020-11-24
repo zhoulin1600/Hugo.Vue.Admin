@@ -3,21 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-// 导入全局样式
-import './assets/css/global.css'
-
-import axios from 'axios'
-
-// ant-design-vue
-import Antd from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css'
-// 全局请求根路径
-axios.defaults.baseURL = 'http://localhost:9000/Api/'
-Vue.prototype.$http = axios
-
-Vue.use(Antd)
+import { VueAxios } from './utils/axios' // axios
+import './global.less' // 全局样式
+import './utils/antd' // ant-design-vue
 
 Vue.config.productionTip = false
+
+Vue.use(VueAxios)
+console.log(process.env)
 
 new Vue({
   router,
